@@ -13,6 +13,13 @@ This is a 'fork' of work done by [@beantoast](https://github.com/beantoast)
 * [docker](https://www.docker.com/)
 * [docker-compose](https://docs.docker.com/compose/)
 
+## Configuration
+
+I'm sure I'm forgetting things...
+
+* Konakart downloaded and in `/app` named `konakart-installation`.
+* Dynatrace agent downloaded and in `/app` named `dynatrace-agent-6.3.0.1305-unix.jar`.
+
 ## Usage
 
 After accounting for dependencies. I did the following.
