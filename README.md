@@ -8,6 +8,7 @@ This is a 'fork' of work done by [@beantoast](https://github.com/beantoast)
 
 * [dynatrace 6.3](https://www.dynatrace.com/)
 * [dynatrace_docker](https://github.com/Dynatrace/Dynatrace-Docker)
+* [dynatrace-agent-6.3.0.1305](https://files.dynatrace.com/downloads/OnPrem/dynaTrace/6.3.0/6.3.0.1305/dynatrace-agent-6.3.0.1305-unix.jar)
 * [konakart-8.1.0.0](http://www.konakart.com/kits/8.1.0.0/KonaKart-8.1.0.0-Linux-Install-64)
 * [haproxy](http://www.haproxy.org/)
 * [docker](https://www.docker.com/)
