@@ -1,0 +1,39 @@
+version: '2'
+
+services:
+  konakart_db:
+#    image: beantoast/dtkonakart_mysql
+    build: db/
+    volumes:
+      - /opt/konakart_db:/var/lib/mysql
+  konakart_proxy:
+    build: proxy/
+    ports:
+      - "80:80"
+    environment:
+      - SERVER1=konakart_app1:8780
+      - SERVER2=konakart_app2:8780
+#      - SERVER3=konakart_app3:8780
+#      - SERVER4=konakart_app4:8780
+  konakart_app1:
+    build: app/
+    environment:
+      - HOSTNAME=konakart_app1
+  konakart_app2:
+    build: app/
+    environment:
+      - HOSTNAME=konakart_app2
+#  konakart_app3:
+#    build: app/
+#    environment:
+#      - HOSTNAME=konakart_app3
+#  konakart_app4:
+#    build: app/
+#    environment:
+#      - HOSTNAME=konakart_app4
+  konakart_collector:
+    image: dynatrace/collector:latest
+    environment:
+      - DT_COLLECTOR_NAME=konakart_collector
+      - DT_COLLECTOR_SERVER=192.168.56.101:6699
+#      - DT_COLLECTOR_SERVER=192.168.56.1:6699
