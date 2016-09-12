@@ -31,9 +31,15 @@ services:
 #    build: app/
 #    environment:
 #      - HOSTNAME=konakart_app4
+  konakart_dtserver:
+    image: dynatrace/server:latest
+    environment:
+      - HOSTNAME=DockerServer
+    ports:
+      - "2021:2021"
   konakart_collector:
     image: dynatrace/collector:latest
     environment:
       - DT_COLLECTOR_NAME=konakart_collector
-      - DT_COLLECTOR_SERVER=192.168.56.101:6699
+      - DT_COLLECTOR_SERVER=konakart_dtserver:6699
 #      - DT_COLLECTOR_SERVER=192.168.56.1:6699
