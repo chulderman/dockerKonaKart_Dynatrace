@@ -30,7 +30,7 @@ if [ ! -f /usr/local/konakart ]; then
 	echo "...... Finished installing."
 fi
 echo "Installing DTAgent"
-java -jar /opt/dynatrace-agent-6.3.0.1305-unix.jar -b 64 -t /opt/dynatrace-6.3 -y
+java -jar /opt/dynatrace-agent-6.5.0.1289-unix.jar -b 64 -t /opt/dynatrace-6.5 -y
 
 cp /opt/startkonakart.sh /usr/local/konakart/bin/startkonakart.sh
 

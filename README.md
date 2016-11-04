@@ -6,9 +6,9 @@ This is a 'fork' of work done by [@beantoast](https://github.com/beantoast)
 
 ## Dependencies:
 
-* [dynatrace 6.3](https://www.dynatrace.com/)
+* [dynatrace 6.5](https://www.dynatrace.com/)
 * [dynatrace_docker](https://github.com/Dynatrace/Dynatrace-Docker)
-* [dynatrace-agent-6.3.0.1305](https://files.dynatrace.com/downloads/OnPrem/dynaTrace/6.3.0/6.3.0.1305/dynatrace-agent-6.3.0.1305-unix.jar)
+* [dynatrace-agent-6.5.0.1289](https://files.dynatrace.com/downloads/OnPrem/dynaTrace/6.5/6.5.0.1289/dynatrace-agent-6.5.0.1289-unix.jar)
 * [konakart-8.1.0.0](http://www.konakart.com/kits/8.1.0.0/KonaKart-8.1.0.0-Linux-Install-64)
 * [haproxy](http://www.haproxy.org/)
 * [docker](https://www.docker.com/)
@@ -19,7 +19,7 @@ This is a 'fork' of work done by [@beantoast](https://github.com/beantoast)
 I'm sure I'm forgetting things...
 
 * Konakart downloaded and in `/app` named `konakart-installation`.
-* Dynatrace agent downloaded and in `/app` named `dynatrace-agent-6.3.0.1305-unix.jar`.
+* Dynatrace agent downloaded and in `/app` named `dynatrace-agent-6.5.0.1289-unix.jar`.
 
 ## Usage
 

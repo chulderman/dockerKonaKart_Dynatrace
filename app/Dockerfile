@@ -13,7 +13,7 @@ ADD ./installation.sh /opt/
 ADD ./konakart-installation /tmp/
 
 #Instrument with Dynatrace Agent
-ADD ./dynatrace-agent-6.3.0.1305-unix.jar /opt/
+ADD ./dynatrace-agent-6.5.0.1289-unix.jar /opt/
 ADD ./startkonakart.sh /opt/
 
 #Listen on default konakart port
